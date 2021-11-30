@@ -13,7 +13,7 @@ const slotsWithDefault = Array(24).fill('Tom luke?!').map((def, i) => slots[i] |
 const snowflakes = Array(20).fill(0).map(() => ({
     size: `${Math.random() * 8}rem`,
     delay: `${Math.random() * 12}s`,
-    position: `${Math.random() * 100}%`,
+    position: `${(Math.random() * 120) - 10}%`,
     opacity: Math.random() * 0.5,
 }))
 
@@ -40,7 +40,7 @@ const App = () =>
         <div className="calendar">
             <header>
                 <h1>
-                    Birgittes advendskalender 2021
+                    Birgittes adventskalender 2021
                 </h1>
             </header>
             {slotsWithDefault.map((content, index) => <Slot content={content} index={index} key={index}/>)}
