@@ -4,7 +4,7 @@ import {useState} from "react";
 const slots = [
     'Massasje når Levi sovner i kveld?',
     'Jeg rydder opp og shiner kjøkken etter lunsj!',
-    'Du velger film ikveld, baby <3',
+    'Du velger film i kveld, baby <3',
     'Jeg lager ekstra god middag!',
 ]
 
@@ -14,7 +14,7 @@ const snowflakes = Array(20).fill().map(() => ({
     size: `${Math.random() * 8}rem`,
     delay: `${Math.random() * 12}s`,
     position: `${Math.random() * 100}%`,
-    opacity: Math.random(),
+    opacity: Math.random() * 0.5,
 }))
 
 const Slot = ({content, index}) => {
