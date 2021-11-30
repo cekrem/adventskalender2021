@@ -1,0 +1,49 @@
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7878;
+    background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
+}
+
+.slot {
+    position: relative;
+    perspective: 1000px;
+    border: thick dashed white;
+    border-collapse: collapse;
+    height: 12rem;
+    width: 12rem;
+    margin: 2rem;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.slot.open {
+    transform: rotateY(180deg);
+}
+
+.slot:not(.open) {
+    cursor: pointer;
+}
+
+.slot > .front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.slot > .front {
+    background-color: rgba(255,255,255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slot > .back {
+    background-color: white;
+    transform: rotateY(180deg);
+    padding: 1rem;
+}
