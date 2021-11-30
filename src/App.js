@@ -2,13 +2,20 @@ import './App.css';
 import {useState} from "react";
 
 const slots = [
-    'Massasje når Levi sovner i kveld',
-    'Jeg rydder opp og shiner kjøkken etter lunsj',
-    'Du velger film ikveld, baby',
-    'Jeg lager ekstra god middag',
+    'Massasje når Levi sovner i kveld?',
+    'Jeg rydder opp og shiner kjøkken etter lunsj!',
+    'Du velger film ikveld, baby <3',
+    'Jeg lager ekstra god middag!',
 ]
 
 const slotsWithDefault = Array(24).fill('Tom luke?!').map((def, i) => slots[i] || def)
+
+const snowflakes = Array(20).fill().map(() => ({
+    size: `${Math.random() * 8}rem`,
+    delay: `${Math.random() * 12}s`,
+    position: `${Math.random() * 100}%`,
+    opacity: Math.random(),
+}))
 
 const Slot = ({content, index}) => {
     const [open, setOpen] = useState(false)
@@ -23,8 +30,26 @@ const Slot = ({content, index}) => {
     </div>
 }
 
-const App = () => <div className="calendar">
-    {slotsWithDefault.map((content, index) => Slot({content, index}))}
-</div>
+const App = () =>
+    <div>
+        <div className="calendar">
+            <header>
+                <h1>
+                    Birgittes advendskalender 2021
+                </h1>
+            </header>
+            {slotsWithDefault.map((content, index) => Slot({content, index}))}
+        </div>
+        <div className="snowflakes">
+            {snowflakes.map(({size, delay, position, opacity}) => <div style={{
+                fontSize: size,
+                left: position,
+                animationDelay: delay,
+                opacity: opacity
+            }} className="snowflake">
+                ❄
+            </div>)}
+        </div>
+    </div>
 
 export default App;
