@@ -20,7 +20,8 @@ const slotsWithDefault = Array(24).fill('Tom luke?!').map((def, i) => slots[i] |
 
 const snowflakes = Array(20).fill(0).map(() => ({
     size: `${Math.random() * 8}rem`,
-    delay: `${Math.random() * 12}s`,
+    delay: `${Math.random() * 2}s`,
+    duration: `${(Math.random() * 10) + 3}s, ${(Math.random() * 2) + 5}s`,
     position: `${(Math.random() * 120) - 10}%`,
     opacity: Math.random() * 0.5,
 }))
@@ -54,10 +55,11 @@ const App = () =>
             {slotsWithDefault.map((content, index) => <Slot content={content} index={index} key={index}/>)}
         < /div>
         <div className="snowflakes">
-            {snowflakes.map(({size, delay, position, opacity}) => <div key={position} style={{
+            {snowflakes.map(({size, delay, duration, position, opacity}) => <div key={position} style={{
                 fontSize: size,
                 left: position,
                 animationDelay: delay,
+                animationDuration: duration,
                 opacity: opacity
             }} className="snowflake">
                 ❄
