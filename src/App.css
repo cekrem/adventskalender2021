@@ -19,7 +19,6 @@ header {
     position: relative;
     perspective: 1000px;
     border: thick dashed white;
-    border-collapse: collapse;
     height: 12rem;
     width: 12rem;
     margin: 2rem;
