@@ -5,7 +5,7 @@ const slots = [
   "Massasje når Levi sovner i kveld?",
   "Jeg rydder opp og shiner kjøkken etter lunsj!",
   "Jeg lager ekstra god middag!",
-  "Jeg ryddeg og fikset mens du sov!",
+  "Jeg ryddet og fikset mens du sov!",
   "Du velger film i kveld, baby <3",
   "Fotmassasje når som helst i dag!",
   "Jeg kan hente også, så får du litt ekstra tid (kan godt lage middag etter det, hvis du vil).",
