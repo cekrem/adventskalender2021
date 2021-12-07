@@ -5,10 +5,11 @@ const slots = [
   "Fotmassasje når som helst i dag!",
   "Velg en sang, så lærer jeg den på gitar og framfører når den er klar!",
   "Du velger film i kveld, baby <3",
-  "Jeg kan hente også, så får du litt ekstra tid (kan godt lage middag etter det, hvis du vil).",
+  "Overraskelse når du kommer hjem fra byen i dag!",
   "Jeg gjør hva som helst for deg, uten unntak!",
   "Deleger noe kjedelig til meg som du hadde tenkt å gjøre – jeg tar det!",
   "Jeg lager Pad Thai i kveld!",
+  "Jeg kan hente også, så får du litt ekstra tid (kan godt lage middag etter det, hvis du vil).",
   "Jeg ryddet og fikset mens du sov!",
   "Massasje any way you like!",
 ];
