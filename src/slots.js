@@ -8,10 +8,10 @@ const slots = [
   "Overraskelse når du kommer hjem fra byen i dag!",
   "Jeg gjør hva som helst for deg, uten unntak!",
   "Deleger noe kjedelig til meg som du hadde tenkt å gjøre – jeg tar det!",
-  "Jeg lager Pad Thai i kveld!",
-  "Jeg kan hente også, så får du litt ekstra tid (kan godt lage middag etter det, hvis du vil).",
-  "Jeg ryddet og fikset mens du sov!",
   "Massasje any way you like!",
+  "Jeg lager Pad Thai i kveld!",
+  "Jeg ryddet og fikset mens du sov!",
+  "Jeg kan hente også, så får du litt ekstra tid (kan godt lage middag etter det, hvis du vil).",
 ];
 
 export const slotsWithDefault = Array(24)
