@@ -18,6 +18,8 @@ const slots = [
   "Jeg står opp med jentene i morgen (hvis nødvendig), og tar Levi med meg hvis han våkner tidlig. Du kan sove til 9:30!",
   "Jeg lager middag og tar oppvasken i kveld mens du legger Levi!",
   "Overraskelse i kveld!",
+  "Sushi når kidsa har lagt seg :D",
+  "Deleger et kjedelig punkt eller to fra lista, så tar jeg det med et smil. For real.",
 ];
 
 export const slotsWithDefault = Array(24)
